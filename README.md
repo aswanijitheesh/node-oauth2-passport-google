@@ -93,5 +93,5 @@ app.get('/auth/google/callback',
 
  1. Run the server by using command in node terminal
     
-    npm start server.js
+    `npm start server.js`
 
