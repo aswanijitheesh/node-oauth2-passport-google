@@ -93,5 +93,9 @@ app.get('/auth/google/callback',
 
  1. Run the server by using command in node terminal
     
-    `npm start server.js`
+    npm start server.js
+  
+2. Server starts listening in port 3000.
+
+3. Login with google account.You will redirect to account page after successfull auenthtication.
 
