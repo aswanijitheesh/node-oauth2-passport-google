@@ -1,0 +1,28 @@
+{
+  "name": "oauthsampleapp18082020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "aswani",
+  "license": "ISC",
+  "dependencies": {
+    "chai-passport-strategy": "^1.0.1",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-google-oauth20": "^2.0.0",
+    "should": "^13.2.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.1.1"
+  }
+}
