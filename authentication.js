@@ -19,13 +19,13 @@ passport.use(new GoogleStrategy({
   clientSecret: config.google.clientSecret,
   callbackURL: config.google.callbackURL
 },
-  function (accessToken, refreshToken, profile, cb) {
+  function (accessToken, refreshToken, profile, done) {
     User.findOne({ googleId: profile.id }, function (err, user) {
       if (err) {
-        return cb(err, false, { message: err });
+        return done(err, false, { message: err });
       } else {
         if (user != '' && user != null) {
-          return cb(null, user, { message: "User " });
+          return done(null, user, { message: "User " });
         } else {
           var userData = new User({
             name: profile.displayName,
@@ -35,9 +35,9 @@ passport.use(new GoogleStrategy({
           });
           userData.save(function (err, newuser) {
             if (err) {
-              return cb(null, false, { message: err + " !!! Please try again" });
+              return done(null, false, { message: err + " !!! Please try again" });
             } else {
-              return cb(null, newuser);
+              return done(null, newuser);
             }
           });
         }
