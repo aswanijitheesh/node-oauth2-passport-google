@@ -78,7 +78,7 @@ app.get('/auth/google/callback',
     google: {
       clientID: 'get_google_id',
       clientSecret: 'get_google_client_secret',
-      callbackURL: 'http://example.com/auth/google/callback'
+      callbackURL: 'http://localhost/auth/google/callback'
     },
   };
 
