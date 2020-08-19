@@ -12,23 +12,19 @@
 This application provides strategy for authenticating with Google
 using the `passport-google-oauth20` module.
 
-## build 
+### build 
 
-1. Create a new folder called `oauth-nodejs-project` for your Node.js service.
+1. Add Express as a dependency by running:
 
-2. Open command promit of the folder and run command `npm init` to create a package.json file.
+    `npm install express`
 
-3. Add Express as a dependency by running:
+### Run server
 
-    `npm install express --save`
-
-4. Create a file named `server.js`.
-
-5. Set view engine for rendering HTML pages.
-
-6. set `cookie-session` and `body-parser`.
-
-7. Install dependencies  and check the server is listing into port `3000`.
+ 1. Run the server by using command in node terminal
+    
+    npm start server.js
+  
+2. Server starts listening in port 3000.
 
 ### passport google authentication
 
@@ -88,13 +84,4 @@ app.get('/auth/google/callback',
 
   module.exports = credentials;
 ```
-### Run server
-
- 1. Run the server by using command in node terminal
-    
-    npm start server.js
-  
-2. Server starts listening in port 3000.
-
-3. Login with google account.You will redirect to account page after successfull auenthtication.
 
