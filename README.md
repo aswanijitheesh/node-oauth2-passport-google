@@ -82,7 +82,7 @@ app.get('/auth/google/callback',
     google: {
       clientID: 'get_google_id',
       clientSecret: 'get_google_client_secret',
-      callbackURL: 'http://127.0.0.1:1337/auth/google/callback'
+      callbackURL: 'http://example.com/auth/google/callback'
     },
   };
 
