@@ -76,8 +76,7 @@ app.get('/auth/google/callback',
     res.redirect('/');
   });
 ```
-### Add *oauth.js* file to the rootand add client id and client key
-
+### Add Google clientID and clientSecret in credentials.js page.
   ```js
   var credentials = {
     google: {
